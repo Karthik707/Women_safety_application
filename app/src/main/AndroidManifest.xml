@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.womensafty">
+
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.SEND_SMS"/>.
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/wiconn"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/wiconn"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.WomenSafty">
+        <activity android:name=".splash" >
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+        </activity>
+
+        <activity android:name=".registration"/>
+        <activity android:name=".login" />
+
+        <activity android:name=".trig" />
+        <activity android:name=".helpline_call" />
+        <activity android:name=".add_relative" />
+        <activity android:name=".how_to_swipe"/>
+        <activity android:name=".MainActivity" >
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
